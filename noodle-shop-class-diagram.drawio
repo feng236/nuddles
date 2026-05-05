@@ -1,0 +1,335 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram id="noodle-class-diagram" name="面馆类图">
+    <mxGraphModel dx="1709" dy="1014" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="noodle" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;&lt;abstract&gt;&gt;&#xa;Noodle" vertex="1">
+          <mxGeometry height="126" width="260" x="600" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="noodle-a1" parent="noodle" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="+ description: str = &quot;未知面食&quot;" vertex="1">
+          <mxGeometry height="26" width="260" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="noodle-div" parent="noodle" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="noodle-m1" parent="noodle" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="+ get_description(): str" vertex="1">
+          <mxGeometry height="26" width="260" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="noodle-m2" parent="noodle" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;fontStyle=2;" value="+ cost(): float  {abstract}" vertex="1">
+          <mxGeometry height="26" width="260" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="hotdrynoodle" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="HotDryNoodle" vertex="1">
+          <mxGeometry height="86" width="180" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="hotdrynoodle-a1" parent="hotdrynoodle" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="description = &quot;热干面&quot;" vertex="1">
+          <mxGeometry height="26" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="hotdrynoodle-div" parent="hotdrynoodle" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="hotdrynoodle-m1" parent="hotdrynoodle" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="+ cost(): 8.0" vertex="1">
+          <mxGeometry height="26" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hotdrypowder" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="HotDryPowder" vertex="1">
+          <mxGeometry height="86" width="180" x="240" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="hotdrypowder-a1" parent="hotdrypowder" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="description = &quot;热干粉&quot;" vertex="1">
+          <mxGeometry height="26" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="hotdrypowder-div" parent="hotdrypowder" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="hotdrypowder-m1" parent="hotdrypowder" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="+ cost(): 8.0" vertex="1">
+          <mxGeometry height="26" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="soupnoodle" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="SoupNoodle" vertex="1">
+          <mxGeometry height="86" width="180" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="soupnoodle-a1" parent="soupnoodle" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="description = &quot;汤面&quot;" vertex="1">
+          <mxGeometry height="26" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="soupnoodle-div" parent="soupnoodle" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="soupnoodle-m1" parent="soupnoodle" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="+ cost(): 7.0" vertex="1">
+          <mxGeometry height="26" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="souppowder" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="SoupPowder" vertex="1">
+          <mxGeometry height="86" width="180" x="240" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="souppowder-a1" parent="souppowder" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="description = &quot;汤粉&quot;" vertex="1">
+          <mxGeometry height="26" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="souppowder-div" parent="souppowder" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="souppowder-m1" parent="souppowder" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="+ cost(): 7.0" vertex="1">
+          <mxGeometry height="26" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="decorator" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;&lt;abstract&gt;&gt;&#xa;ToppingDecorator" vertex="1">
+          <mxGeometry height="232" width="280" x="1080" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="decorator-a1" parent="decorator" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="+ topping_name: str = &quot;&quot;" vertex="1">
+          <mxGeometry height="26" width="280" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="decorator-a2" parent="decorator" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="+ topping_price: float = 0.0" vertex="1">
+          <mxGeometry height="26" width="280" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="decorator-a3" parent="decorator" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="- noodle: Noodle" vertex="1">
+          <mxGeometry height="26" width="280" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="decorator-div" parent="decorator" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;" value="" vertex="1">
+          <mxGeometry height="8" width="280" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="decorator-m1" parent="decorator" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="+ __init__(noodle: Noodle)" vertex="1">
+          <mxGeometry height="26" width="280" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="decorator-m2" parent="decorator" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="+ get_description(): str" vertex="1">
+          <mxGeometry height="26" width="280" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="decorator-m3" parent="decorator" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="+ cost(): float" vertex="1">
+          <mxGeometry height="26" width="280" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="vegetable" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Vegetable" vertex="1">
+          <mxGeometry height="78" width="170" x="540" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="vegetable-a1" parent="vegetable" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;时蔬&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vegetable-a2" parent="vegetable" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 2.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="chicken" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Chicken" vertex="1">
+          <mxGeometry height="78" width="170" x="730" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="chicken-a1" parent="chicken" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;鸡肉&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="chicken-a2" parent="chicken" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 6.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="friedegg" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="FriedEgg" vertex="1">
+          <mxGeometry height="78" width="170" x="920" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="friedegg-a1" parent="friedegg" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;煎蛋&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="friedegg-a2" parent="friedegg" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 2.5" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="threedelicacies" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ThreeDelicacies" vertex="1">
+          <mxGeometry height="78" width="170" x="1110" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="threedelicacies-a1" parent="threedelicacies" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;三鲜&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="threedelicacies-a2" parent="threedelicacies" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 8.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="beef" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Beef" vertex="1">
+          <mxGeometry height="78" width="170" x="1300" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="beef-a1" parent="beef" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;牛肉&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="beef-a2" parent="beef" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 10.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="beeftripe" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="BeefTripe" vertex="1">
+          <mxGeometry height="78" width="170" x="540" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="beeftripe-a1" parent="beeftripe" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;牛肚&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="beeftripe-a2" parent="beeftripe" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 9.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="ribs" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Ribs" vertex="1">
+          <mxGeometry height="78" width="170" x="730" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="ribs-a1" parent="ribs" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;排骨&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ribs-a2" parent="ribs" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 12.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="fatintestine" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="FatIntestine" vertex="1">
+          <mxGeometry height="78" width="170" x="920" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="fatintestine-a1" parent="fatintestine" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;肥肠&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="fatintestine-a2" parent="fatintestine" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 11.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="eel" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Eel" vertex="1">
+          <mxGeometry height="78" width="170" x="1110" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="eel-a1" parent="eel" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;鳝鱼&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="eel-a2" parent="eel" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 13.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="porkkidney" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="PorkKidney" vertex="1">
+          <mxGeometry height="78" width="170" x="1300" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="porkkidney-a1" parent="porkkidney" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;腰花&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="porkkidney-a2" parent="porkkidney" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 10.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sourbeans" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" value="SourBeans" vertex="1">
+          <mxGeometry height="78" width="170" x="540" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="sourbeans-a1" parent="sourbeans" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;酸豆角&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sourbeans-a2" parent="sourbeans" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 1.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="spicyradish" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" value="SpicyRadish" vertex="1">
+          <mxGeometry height="78" width="170" x="730" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="spicyradish-a1" parent="spicyradish" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;辣萝卜丁&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="spicyradish-a2" parent="spicyradish" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 1.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="greenonion" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" value="GreenOnion" vertex="1">
+          <mxGeometry height="78" width="170" x="920" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="greenonion-a1" parent="greenonion" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;葱花&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="greenonion-a2" parent="greenonion" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 0.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="cilantro" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" value="Cilantro" vertex="1">
+          <mxGeometry height="78" width="170" x="1110" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="cilantro-a1" parent="cilantro" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;香菜&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cilantro-a2" parent="cilantro" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 0.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="celery" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" value="Celery" vertex="1">
+          <mxGeometry height="78" width="170" x="1300" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="celery-a1" parent="celery" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;芹菜&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="celery-a2" parent="celery" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 0.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="extranoodle" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="ExtraNoodle" vertex="1">
+          <mxGeometry height="78" width="170" x="540" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="extranoodle-a1" parent="extranoodle" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;加面&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="extranoodle-a2" parent="extranoodle" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 3.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="extrapowder" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="ExtraPowder" vertex="1">
+          <mxGeometry height="78" width="170" x="730" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="extrapowder-a1" parent="extrapowder" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_name = &quot;加粉&quot;" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="extrapowder-a2" parent="extrapowder" style="text;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;" value="topping_price = 3.0" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="grp-main" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=12;fontColor=#7f6000;" value="主浇头（10种）" vertex="1">
+          <mxGeometry height="20" width="120" x="450" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="grp-side" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=12;fontColor=#7f0000;" value="配菜（5种）" vertex="1">
+          <mxGeometry height="20" width="120" x="450" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="grp-extra" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=12;fontColor=#5e2750;" value="加量（2种）" vertex="1">
+          <mxGeometry height="20" width="120" x="450" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fontSize=11;" value="图例：&#xa;━▷ 继承（实线 + 空心三角箭头）&#xa;━◇ 聚合 / 装饰持有引用" vertex="1">
+          <mxGeometry height="80" width="260" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="hotdrynoodle" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;strokeWidth=1.5;" target="noodle">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="hotdrypowder" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;strokeWidth=1.5;" target="noodle">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="soupnoodle" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;strokeWidth=1.5;" target="noodle">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="souppowder" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;strokeWidth=1.5;" target="noodle">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="decorator" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#6c8ebf;strokeWidth=1.5;" target="noodle">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-comp" edge="1" parent="1" source="decorator" style="endArrow=open;endFill=0;endSize=10;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;startArrow=diamondThin;startFill=0;startSize=18;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9673a6;strokeWidth=1.5;dashed=0;curved=0;fontSize=11;" target="noodle" value="noodle  0..1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i1" edge="1" parent="1" source="vegetable" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeColor=#d6b656;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i2" edge="1" parent="1" source="chicken" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.35;entryY=1;entryDx=0;entryDy=0;strokeColor=#d6b656;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i3" edge="1" parent="1" source="friedegg" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#d6b656;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i4" edge="1" parent="1" source="threedelicacies" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.65;entryY=1;entryDx=0;entryDy=0;strokeColor=#d6b656;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i5" edge="1" parent="1" source="beef" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeColor=#d6b656;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i6" edge="1" parent="1" source="beeftripe" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.2;entryY=1;entryDx=0;entryDy=0;strokeColor=#d6b656;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i7" edge="1" parent="1" source="ribs" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.4;entryY=1;entryDx=0;entryDy=0;strokeColor=#d6b656;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i8" edge="1" parent="1" source="fatintestine" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.55;entryY=1;entryDx=0;entryDy=0;strokeColor=#d6b656;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i9" edge="1" parent="1" source="eel" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.7;entryY=1;entryDx=0;entryDy=0;strokeColor=#d6b656;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i10" edge="1" parent="1" source="porkkidney" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.85;entryY=1;entryDx=0;entryDy=0;strokeColor=#d6b656;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i11" edge="1" parent="1" source="sourbeans" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.15;entryY=1;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i12" edge="1" parent="1" source="spicyradish" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.3;entryY=1;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i13" edge="1" parent="1" source="greenonion" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.45;entryY=1;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i14" edge="1" parent="1" source="cilantro" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.6;entryY=1;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i15" edge="1" parent="1" source="celery" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.8;entryY=1;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i16" edge="1" parent="1" source="extranoodle" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.1;entryY=1;entryDx=0;entryDy=0;strokeColor=#9673a6;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i17" edge="1" parent="1" source="extrapowder" style="endArrow=block;endFill=0;endSize=14;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.9;entryY=1;entryDx=0;entryDy=0;strokeColor=#9673a6;strokeWidth=1.2;" target="decorator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
